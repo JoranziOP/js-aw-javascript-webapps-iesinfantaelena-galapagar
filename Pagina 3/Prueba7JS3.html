@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+Pagina 3 ejercicio 7 Hucha de ahorro con resta	Solucion:
+</head>
+<body>
+	<script type='text/javascript'>
+		let ref = parseInt(prompt("Objetivo de ahorro"));
+		let est = 0;
+		let ins = 0;
+		while (est<ref) {
+			ins = parseInt(prompt("Cantidad de inversion"));
+			if (!isNaN(ins)) {
+				est = est+ins;
+				alert("Quedan "+(ref-est)+" euros");
+			}
+			else 
+				alert("ERROR, pruebe otra vez");
+			}
+		if (est=ref) {
+			document.write("Has conseguido "+est+" de "+ref+" euros");
+		}
+		else {
+			alert ("ERROR");
+		}
+	</script>
+</body>
+</html>

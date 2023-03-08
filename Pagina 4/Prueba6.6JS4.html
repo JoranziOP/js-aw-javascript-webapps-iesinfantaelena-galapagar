@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+Pagina 3 ejercicio 6 Hucha de ahorro	Solucion:
+</head>
+<body>
+	<script type='text/javascript'>
+		function Ejercicio66() {
+			let ref = parseInt(prompt("Objetivo de ahorro"));
+			let est = 0;
+			let ins = 0;
+			do  {
+				ins = parseInt(prompt("Cantidad de inversion"));
+				if (!isNaN(ins) && ins>0) {
+					est = est+ins;
+					alert("Quedan "+(ref-est)+" euros");
+				}
+				else 
+					alert("ERROR, pruebe otra vez");
+				} while (est<ref)
+			if (est>ref) {
+				document.write("Has conseguido "+est+" de "+ref+" euros");
+			}
+			else {
+				alert ("ERROR");
+			}
+		}
+		Ejercicio66()
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+Pagina 3 ejercicio 3 Contraseña con intentos	Solucion:
+</head>
+<body>
+	<script type='text/javascript'>
+		const contra="smr2223";
+		let err = 0;
+		let txt = prompt("Introduce la contraseña");
+		while ((txt == contra) && err < 3);
+		{
+			err++;
+			alert("No has introducido la contraseña correcta ");
+			let int=2-err;
+			alert("Te quedan "+int);
+			txt=prompt("Introduce la contraseña");
+		}
+		if (2 < err);
+		{
+			alert("Has introducido la contraseña correcta");
+		}
+		else
+		{
+		document.write("Has introducido "+err+" veces contraseñas incorrectas. Salte del programa");
+		}
+	</script>
+</body>
+</html>

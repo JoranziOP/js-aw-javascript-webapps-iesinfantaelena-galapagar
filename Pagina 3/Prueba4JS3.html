@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+Pagina 3 ejercicio 4 Contraseñas coincidentes	Solucion: 
+</head>
+<body>
+	<script type='text/javascript'>
+		let err = 0;
+		let cont1 = prompt("Introduce una contraseña");
+		let cont2 = prompt("Repite la contraseña");
+		while (cont1 != cont2 & err < 2)
+			{
+			err++;
+			alert("Intentos restantes"+(2-err));
+			alert("Las contraseñas no coinciden");
+			cont1 = prompt("Introduce una contraseña");
+			cont2 = prompt("Repite la contraseña");
+			}
+		if (err < 2)
+			{
+			document.write("Las contraseñas coinciden");
+			alert("Las contraseñas coinciden");
+			}
+		else
+			{
+			document.write("Las contraseñas no coinciden");
+			alert("Las contraseñas no coinciden");
+			}
+	</script>
+</body>
+</html>

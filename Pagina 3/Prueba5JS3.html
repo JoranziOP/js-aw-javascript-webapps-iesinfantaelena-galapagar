@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+Pagina 3 ejercicio 5 Suma y media	Solucion:
+</head>
+<body>
+	<script type='text/javascript'>
+		let num = parseInt(prompt("Introduzca los valores, para calcular introduzca e"));
+		let con = 0;
+		let sum = 0;
+		while (num!= "e") {
+			if (!isNaN(num)) {
+				num=parseInt(num);
+				con++;
+				sum = sum+num;
+			}
+			num = (prompt("Introduzca los valores, para calcular introduzca e"));
+		}
+		if (con != 0) {
+			document.write("Has introducido "+con+" numeros")
+			document.write(" La suma es "+sum);
+			document.write(" La media es "+sum/con);
+		}
+		else {
+			alert ("No se han introducido valores correctos");
+		}
+	</script>
+</body>
+</html>

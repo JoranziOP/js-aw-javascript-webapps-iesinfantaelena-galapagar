@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+Pagina 4 ejercicio 3 Numero de 3 o 5 cifras	Solucion:
+</head>
+<body>
+	<script type='text/javascript'>
+		function Ejercicio3() {
+			let num=0
+			do  {
+				num = prompt("Introduzca un numero de 3 o 5 cifras");
+				if (num.length!==3 | num.length!==5) {
+				alert("No has introducido un numero de 3 o 5 cifras");
+				}
+			} while (num.length!==3 | num.length!==5)
+			document.write("Has introducido el numero "+num+" de "+num.length+"cifras");
+		}
+		Ejercicio3()
+	</script>
+</body>
+</html>

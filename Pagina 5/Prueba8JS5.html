@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+Pagina 4 ejercicio 8 Rectangulo hueco	Solucion: <br>
+</head>
+<body>
+	<script type='text/javascript'>
+		function Ejercicio8() {
+			let an = parseInt(prompt("Introduce el ancho"));
+			let la = parseInt(prompt("Introduce el largo"));
+			let ia = 1;
+			let il = 1;
+			for (il=0; il<la; il++) {
+				document.write("*&nbsp;")
+			}
+			for (ia=0; ia<an; ia++) {
+				document.write("<br>");
+				document.write("*");
+				for (il=0; il<la; il++) {
+				document.write("&nbsp;&nbsp;");
+				}
+				document.write("*");
+			}
+			document.write("<br>")
+			for (il=0; il<la; il++) {
+				document.write("*&nbsp;")
+			}
+		}
+		Ejercicio8()
+	</script>
+</body>
+</html>

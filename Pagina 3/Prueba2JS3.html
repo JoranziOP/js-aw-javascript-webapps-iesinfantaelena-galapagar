@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+Pagina 3 ejercicio 2 Comprobador de S o s para salir del programa y contador de errores	Solucion:
+</head>
+<body>
+	<script type='text/javascript'>
+		let err;
+		let num=(prompt("Introduce una S o s para salir del programa"));
+		while ("S"==!num|"s"==!num|""==num);
+		{
+			err++;
+			alert("No has introducido una S o s");
+			num=prompt("Introduce una S o s para salir del programa")
+		}
+		document.write("Has introducido "+err+" veces datos erroneos antes de salir. Salte del programa");
+	</script>
+</body>
+</html>

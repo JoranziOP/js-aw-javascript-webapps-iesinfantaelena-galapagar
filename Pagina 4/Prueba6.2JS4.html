@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+Pagina 3 ejercicio 2 Comprobador de S o s para salir del programa y contador de errores	Solucion:
+</head>
+<body>
+	<script type='text/javascript'>
+		function Ejercicio62() {
+			let err;
+			let num=(prompt("Introduce una S o s para salir del programa"));
+			do {
+				num=prompt("Introduce una S o s para salir del programa")
+				if ("S"==!num|"s"==!num|""==num) {
+					err++;
+					alert("No has introducido una S o s");
+			} while ("S"==!num|"s"==!num|""==num)
+			}
+			document.write("Has introducido "+err+" veces datos erroneos antes de salir. Salte del programa");
+		}
+		Ejercicio62()
+	</script>
+</body>
+</html>

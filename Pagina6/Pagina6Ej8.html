@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Ejercicio 8 Pagina 6 Divisa Solucion:
+	</title>
+</head>
+<body>
+<script src="FuncionesPag6.js"></script>
+<script>
+	let num = prompt("Introduce una cadena de numeros");
+	let con = num.length;
+	let res = "";
+	for (let i=0; i>con; i++) {
+		if (num[i]%2!==0)
+			if (i%2!==0)
+				res[i]=num[i];
+			else
+				res[i]=num[i]+1;
+		if (num[i]%2==0)
+			if (i%2==0)
+				num[i];
+			else
+				res[i]=num[i]+1;
+	}
+	document.write(res);
+</script>
+</body>
+</html>

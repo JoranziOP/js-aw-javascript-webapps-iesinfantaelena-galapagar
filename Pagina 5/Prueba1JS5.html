@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+Pagina 5 ejercicio 1 5 numeros pares	Solucion:
+</head>
+<body>
+	<script type='text/javascript'>
+		function Ejercicio1() {
+			let num = parseInt(prompt("Introduce un numero"));
+			let c = 0;
+			document.write("<br>"+ "LOS SIGUIENTES 5 NÚMEROS PARES A "+ num +" SON: ");
+			for (c = 0; c<5 ;c++) {
+				if (num%2==0){
+					num=num+2;
+					document.write(num+", ");
+				}
+				if (num%2!=0){
+					num++;
+					document.write(num+", ");
+				}
+			}
+		}
+		Ejercicio1()
+	</script>
+</body>
+</html>
